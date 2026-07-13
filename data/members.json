@@ -1,0 +1,25 @@
+[
+  {
+    "id": "hiruta",
+    "name": "Chutatsu Hiruta",
+    "account": "@tebi_cub",
+    "icon": "img/hiruta_icon.jpg",
+    "photo": "img/hiruta_photo.jpg",
+    "profile": "CrossCubで日本中を旅しています🏍\n旅・写真・キャンプ・N-VAN",
+    "instagram": "https://instagram.com/tebi_cub",
+    "threads": "https://threads.net/@tebi_cub",
+    "x": "https://x.com/"
+  },
+
+  {
+    "id": "tanaka",
+    "name": "田中 太郎",
+    "account": "@tanaka",
+    "icon": "img/tanaka_icon.jpg",
+    "photo": "img/tanaka_photo.jpg",
+    "profile": "営業担当です。",
+    "instagram": "#",
+    "threads": "#",
+    "x": "#"
+  }
+]

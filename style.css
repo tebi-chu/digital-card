@@ -347,3 +347,57 @@ button.contact-button{
     }
 
 }
+
+/* ==========================
+   Page Animation
+========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(24px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.card{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+.icon{
+
+    animation:fadeUp .8s ease .15s both;
+
+}
+
+.photo{
+
+    animation:fadeUp .8s ease .3s both;
+
+}
+
+.sns-area{
+
+    animation:fadeUp .8s ease .45s both;
+
+}
+
+.contact-area{
+
+    animation:fadeUp .8s ease .6s both;
+
+}

@@ -67,12 +67,15 @@ body{
 }
 
 .card{
-
     width:100%;
 
     max-width:420px;
 
-    background:rgba(255,255,255,.12);
+    position:relative;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.16);
 
     backdrop-filter:blur(18px);
 
@@ -82,13 +85,30 @@ body{
 
     padding:30px;
 
-    border:1px solid rgba(255,255,255,.18);
+    border:1px solid rgba(255,255,255,.28);
 
-    box-shadow:0 15px 40px rgba(0,0,0,.35);
+    box-shadow:0 20px 50px rgba(0,0,0,.35),
+    0 0 0 1px rgba(255,255,255,.08) inset;
 
     text-align:center;
 
 }
+
+.card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:45%;
+  border-radius:24px 24px 120px 120px;
+  background:linear-gradient(
+    rgba(255,255,255,.28),
+    rgba(255,255,255,0)
+  );
+  pointer-events:none;
+}
+
 .icon{
 
     width:120px;

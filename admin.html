@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Digital Card Admin</title>
+<title>Digital Card 管理画面</title>
 
 <link rel="stylesheet" href="admin.css">
 
@@ -13,37 +15,71 @@
 
 <body>
 
+<header class="header">
+
+    Digital Card 管理画面
+
+</header>
+
 <div class="container">
 
-    <div class="card">
+    <div class="toolbar">
 
-        <h1>Digital Card 管理画面</h1>
+        <input
+            type="text"
+            id="searchBox"
+            placeholder="名前またはIDで検索">
 
-        <p style="margin:20px 0;">
-            この画面からデジタル名刺を管理します。
-        </p>
+        <button
+            class="button"
+            id="newMemberButton">
 
-        <div class="contact-area">
+            ＋ 新規ユーザー
 
-            <button class="contact-button" id="memberListBtn">
-                ユーザー一覧
-            </button>
-
-            <button class="contact-button" id="newMemberBtn">
-                新規ユーザー作成
-            </button>
-
-            <button class="contact-button" id="settingBtn">
-                システム設定
-            </button>
-
-        </div>
+        </button>
 
     </div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>名前</th>
+
+                <th>アカウント</th>
+
+                <th>状態</th>
+
+                <th>操作</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="memberTable">
+
+            <tr>
+
+                <td colspan="5" style="text-align:center; padding:40px;">
+
+                    読み込み中...
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
 
 </div>
 
 <script src="admin.js"></script>
 
 </body>
+
 </html>

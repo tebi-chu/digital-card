@@ -1,0 +1,17 @@
+{
+  "name": "Digital Card",
+  "short_name": "Digital Card",
+  "description": "NFC対応デジタル名刺",
+  "start_url": "./?id=hiruta",
+  "display": "standalone",
+  "background_color": "#667744",
+  "theme_color": "#667744",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

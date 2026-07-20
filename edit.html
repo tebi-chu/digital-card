@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ユーザー編集</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    ユーザー編集
+
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2 id="pageTitle">
+
+            読み込み中...
+
+        </h2>
+
+        <form id="editForm">
+
+            <p style="margin-top:20px;">
+
+                名前
+
+            </p>
+
+            <input
+                type="text"
+                id="displayName"
+                style="width:100%;padding:10px;">
+
+            <p style="margin-top:20px;">
+
+                アカウント
+
+            </p>
+
+            <input
+                type="text"
+                id="account"
+                style="width:100%;padding:10px;">
+
+            <p style="margin-top:20px;">
+
+                自己紹介
+
+            </p>
+
+            <textarea
+                id="profile"
+                rows="5"
+                style="width:100%;padding:10px;"></textarea>
+
+            <br><br>
+
+            <button
+                type="button"
+                class="button"
+                id="saveButton">
+
+                保存
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="edit.js"></script>
+
+</body>
+
+</html>

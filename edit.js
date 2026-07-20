@@ -104,9 +104,63 @@ saveButton.addEventListener(
 
     "click",
 
-    function(){
+    async function(){
 
-        alert("保存機能は次のSTEPで実装します。");
+        const member = {
+
+            id: memberId,
+
+            displayName: displayName.value,
+
+            account: account.value,
+
+            profile: profile.value
+
+        };
+
+        try{
+
+            const response =
+                await fetch(
+
+                    API_URL,
+
+                    {
+
+                        method:"POST",
+
+                        headers:{
+                            "Content-Type":"application/json"
+                        },
+
+                        body:JSON.stringify(member)
+
+                    }
+
+                );
+
+            const result =
+                await response.json();
+
+            if(result.success){
+
+                alert("保存しました。");
+
+            }else{
+
+                alert(result.message);
+
+            }
+
+        }
+
+        catch(error){
+
+            console.error(error);
+
+            alert("保存に失敗しました。");
+
+        }
 
     }
 
